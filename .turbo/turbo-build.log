@@ -1,0 +1,70 @@
+$ next build
+info  - Loaded env from /Users/aelizaga/Develop/BROCODE/bc-turborepo/apps/06-shop-next/.env.production
+info  - Linting and checking validity of types...
+info  - Creating an optimized production build...
+info  - Compiled successfully
+info  - Collecting page data...
+(node:21246) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+MongoDB connected: mongodb+srv://alexelizaga:5113Mongodb@turborepo.pzvcrtj.mongodb.net/shopdb
+MongoDB disconnected
+info  - Generating static pages (0/14)
+info  - Generating static pages (3/14)
+info  - Generating static pages (6/14)
+info  - Generating static pages (10/14)
+MongoDB connected: mongodb+srv://alexelizaga:5113Mongodb@turborepo.pzvcrtj.mongodb.net/shopdb
+MongoDB disconnected
+info  - Generating static pages (14/14)
+info  - Finalizing page optimization...
+
+Route (pages)                                             Size     First Load JS
+┌ ○ / (321 ms)                                            540 B           349 kB
+├   /_app                                                 0 B             127 kB
+├ ○ /404 (315 ms)                                         487 B           349 kB
+├ ○ /admin                                                1.94 kB         350 kB
+├ ○ /admin/orders (566 ms)                                829 B           458 kB
+├ λ /admin/orders/[id]                                    1.24 kB         349 kB
+├ ○ /admin/users (376 ms)                                 1.18 kB         458 kB
+├ λ /api/admin/dashboard                                  0 B             127 kB
+├ λ /api/admin/orders                                     0 B             127 kB
+├ λ /api/admin/users                                      0 B             127 kB
+├ λ /api/auth/[...nextauth]                               0 B             127 kB
+├ λ /api/hello                                            0 B             127 kB
+├ λ /api/orders                                           0 B             127 kB
+├ λ /api/orders/pay                                       0 B             127 kB
+├ λ /api/products                                         0 B             127 kB
+├ λ /api/products/[slug]                                  0 B             127 kB
+├ λ /api/search                                           0 B             127 kB
+├ λ /api/search/[q]                                       0 B             127 kB
+├ λ /api/seed                                             0 B             127 kB
+├ λ /api/user/login                                       0 B             127 kB
+├ λ /api/user/register                                    0 B             127 kB
+├ λ /api/user/validate-token                              0 B             127 kB
+├ λ /auth/login                                           1.41 kB         370 kB
+├ λ /auth/register                                        1.38 kB         370 kB
+├ ○ /cart                                                 715 B           349 kB
+├ ○ /cart/empty (301 ms)                                  817 B           349 kB
+├ ○ /category/kids (318 ms)                               554 B           349 kB
+├ ○ /category/men (324 ms)                                551 B           349 kB
+├ ○ /category/women (318 ms)                              552 B           349 kB
+├ ○ /checkout/address (349 ms)                            1.14 kB         370 kB
+├ ○ /checkout/summary                                     1.13 kB         349 kB
+├ λ /orders/[id]                                          1.55 kB         350 kB
+├ λ /orders/history                                       835 B           458 kB
+├ ● /product/[slug] (ISR: 86400 Seconds) (1463 ms)        928 B           349 kB
+├   └ /product/mens_chill_crew_neck_sweatshirt (1463 ms)
+└ λ /search/[query]                                       518 B           349 kB
++ First Load JS shared by all                             127 kB
+  ├ chunks/framework-19f3649580393c10.js                  45.2 kB
+  ├ chunks/main-f986fe3f13d90e42.js                       27 kB
+  ├ chunks/pages/_app-662d7f9adc1f9fae.js                 53.3 kB
+  ├ chunks/webpack-36d12a75f0098f30.js                    1.04 kB
+  └ css/7fcbdc0a779f48be.css                              220 B
+
+ƒ Middleware                                              61.5 kB
+
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+●  (SSG)     automatically generated as static HTML + JSON (uses getStaticProps)
+   (ISR)     incremental static regeneration (uses revalidate in getStaticProps)
+
